@@ -73,6 +73,7 @@ function BulkEmailForm(props) {
    * @param {*} action "POST" or "PATCH" of the FORM_ACTIONS constant
    * @returns formatted Data
    */
+  console.log(isScheduled)
   const formatDataForFormAction = (action) => {
     if (action === FORM_ACTIONS.POST) {
       const emailData = new FormData();
