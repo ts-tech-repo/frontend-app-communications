@@ -73,7 +73,6 @@ function BulkEmailForm(props) {
    * @param {*} action "POST" or "PATCH" of the FORM_ACTIONS constant
    * @returns formatted Data
    */
-  console.log(isScheduled)
   const formatDataForFormAction = (action) => {
     if (action === FORM_ACTIONS.POST) {
       const emailData = new FormData();
@@ -304,6 +303,7 @@ function BulkEmailForm(props) {
         <div>
           <p>{intl.formatMessage(messages.bulkEmailInstructionsProofreading)}</p>
         </div>
+        console.log(getConfig().SCHEDULE_EMAIL_SECTION)
         <Form.Group>
           {getConfig().SCHEDULE_EMAIL_SECTION && (
             <div className="mb-3">
