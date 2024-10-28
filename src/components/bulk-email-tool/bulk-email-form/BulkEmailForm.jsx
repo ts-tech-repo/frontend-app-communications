@@ -303,7 +303,6 @@ function BulkEmailForm(props) {
         <div>
           <p>{intl.formatMessage(messages.bulkEmailInstructionsProofreading)}</p>
         </div>
-        console.log(getConfig().SCHEDULE_EMAIL_SECTION)
         <Form.Group>
           {getConfig().SCHEDULE_EMAIL_SECTION && (
             <div className="mb-3">
