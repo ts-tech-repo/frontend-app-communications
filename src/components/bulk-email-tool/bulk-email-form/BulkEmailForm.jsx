@@ -63,7 +63,7 @@ function BulkEmailForm(props) {
     schedule: true,
   });
   const [isTaskAlertOpen, openTaskAlert, closeTaskAlert] = useToggle(false);
-  const [isScheduled, toggleScheduled] = useState(false);
+  const [isScheduled, toggleScheduled] = useState(true);
   const isMobile = useMobileResponsive();
 
   /**
