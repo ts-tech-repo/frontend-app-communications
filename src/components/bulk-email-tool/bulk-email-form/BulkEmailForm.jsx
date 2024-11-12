@@ -217,6 +217,7 @@ function BulkEmailForm(props) {
   const AlertMessage = () => (
     <>
       <p>{intl.formatMessage(messages.bulkEmailTaskAlertRecipients, { subject: editor.emailSubject })}</p>
+      console.log(editor.emailRecipients)
       <ul className="list-unstyled">
         {editor.emailRecipients.map((group) => (
           <li key={group}>{group}</li>
