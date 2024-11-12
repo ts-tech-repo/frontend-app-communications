@@ -10,8 +10,6 @@ function ViewEmailModal({
   intl, messageContent, isOpen, setModalOpen,
 }) {
   const [, dispatch] = useContext(BulkEmailContext);
-  created_date = new Date(messageContent.created);
-  console.log(created_date)
   return (
     <div>
       <ModalDialog
