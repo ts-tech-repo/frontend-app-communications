@@ -10,6 +10,7 @@ function ViewEmailModal({
   intl, messageContent, isOpen, setModalOpen,
 }) {
   const [, dispatch] = useContext(BulkEmailContext);
+  created_date = new Date(messageContent.created);
   return (
     <div>
       <ModalDialog
@@ -30,7 +31,7 @@ function ViewEmailModal({
             </div>
             <div className="d-flex flex-row">
               <p>{intl.formatMessage(messages.modalMessageTimeSent)}</p>
-              <p className="pl-2">{messageContent.created}</p>
+              <p className="pl-2">{created_date}</p>
             </div>
             <div className="d-flex flex-row">
               <p>{intl.formatMessage(messages.modalMessageSentTo)}</p>
