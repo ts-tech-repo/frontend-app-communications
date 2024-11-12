@@ -243,6 +243,7 @@ function BulkEmailForm(props) {
           subject: editor.emailSubject,
         })}
       </p>
+      console.log(editor.emailRecipients)
       <p>{intl.formatMessage(messages.bulkEmailTaskAlertEditingTo)}</p>
       <ul className="list-unstyled">
         {editor.emailRecipients.map((group) => (
