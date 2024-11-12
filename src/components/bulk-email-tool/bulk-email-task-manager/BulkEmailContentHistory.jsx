@@ -59,7 +59,7 @@ function BulkEmailContentHistory({ intl }) {
         ...item,
         subject: item.email.subject,
         sent_to: item.sent_to.join(', '),
-        created: new Date(item.created),
+        created: item.created,
       }));
     }
     
