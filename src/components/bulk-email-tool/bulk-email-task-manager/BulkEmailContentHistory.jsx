@@ -55,7 +55,9 @@ function BulkEmailContentHistory({ intl }) {
     let tableData = [];
     
     if (emailHistoryData) {
-      tableData = emailHistoryData.map((item) => ({
+      console.log(emailHistoryData)
+      tableData = emailHistoryData.map((item) => (
+        {
         ...item,
         subject: item.email.subject,
         sent_to: item.sent_to.join(', '),
