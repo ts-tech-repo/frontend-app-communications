@@ -53,6 +53,7 @@ function BulkEmailContentHistory({ intl }) {
    */
   function transformDataForTable() {
     let tableData = [];
+    
     if (emailHistoryData) {
       tableData = emailHistoryData.map((item) => ({
         ...item,
@@ -60,6 +61,7 @@ function BulkEmailContentHistory({ intl }) {
         sent_to: item.sent_to.join(', '),
       }));
     }
+    console.log(tableData)
     return tableData;
   }
 
