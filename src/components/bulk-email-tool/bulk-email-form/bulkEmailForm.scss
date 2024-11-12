@@ -8,3 +8,10 @@
         }
     }
 }
+
+ul.list-unstyled {
+    li:first-child {
+      display: none;
+    }
+  }
+  
