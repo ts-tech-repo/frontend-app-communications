@@ -30,7 +30,7 @@ function ViewEmailModal({
             </div>
             <div className="d-flex flex-row">
               <p>{intl.formatMessage(messages.modalMessageTimeSent)}</p>
-              <p className="pl-2">{new Date(messageContent.created)}</p>
+              <p className="pl-2">{messageContent.created}</p>
             </div>
             <div className="d-flex flex-row">
               <p>{intl.formatMessage(messages.modalMessageSentTo)}</p>
