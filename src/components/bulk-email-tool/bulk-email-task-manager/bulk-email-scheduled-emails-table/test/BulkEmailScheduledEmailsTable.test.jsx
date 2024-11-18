@@ -68,7 +68,7 @@ describe('BulkEmailScheduledEmailsTable', () => {
     fireEvent.click(await screen.findByLabelText('View'));
     expect(await screen.findByText('Subject:')).toBeTruthy();
     expect(await screen.findByText('Sent by:')).toBeTruthy();
-    expect(await screen.findByText('Time sent:')).toBeTruthy();
+    expect(await screen.findByText('Time Created:')).toBeTruthy();
     expect(await screen.findByText('Sent to:')).toBeTruthy();
     expect(await screen.findByText('Message:')).toBeTruthy();
   });
