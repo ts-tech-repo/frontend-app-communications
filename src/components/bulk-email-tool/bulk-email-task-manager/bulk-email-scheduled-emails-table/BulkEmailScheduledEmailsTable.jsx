@@ -42,7 +42,7 @@ function BulkEmailScheduledEmailsTable({ intl }) {
   });
   const [isConfirmModalOpen, openConfirmModal, closeConfirmModal] = useToggle();
   const [currentTask, setCurrentTask] = useState({});
-
+  console.log(scheduledEmailsTable)
   useEffect(() => {
     setTableData(flattenScheduledEmailsArray(scheduledEmailsTable.results));
   }, [scheduledEmailsTable.results]);
