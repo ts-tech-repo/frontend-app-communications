@@ -24,7 +24,7 @@ const messages = defineMessages({
   },
   modalMessageTimeSent: {
     id: 'bulk.email.content.history.table.modal.timeSent',
-    defaultMessage: 'Time sent:',
+    defaultMessage: 'Time Created:',
   },
   modalMessageSentTo: {
     id: 'bulk.email.content.history.table.modal.sentTo',
