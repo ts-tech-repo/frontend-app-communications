@@ -63,7 +63,7 @@ function BulkEmailForm(props) {
     schedule: true,
   });
   const [isTaskAlertOpen, openTaskAlert, closeTaskAlert] = useToggle(false);
-  const [isScheduled, toggleScheduled] = useState(false);
+  const [isScheduled, toggleScheduled] = useState(true);
   const isMobile = useMobileResponsive();
 
   /**
@@ -218,7 +218,7 @@ function BulkEmailForm(props) {
     <>
       <p>{intl.formatMessage(messages.bulkEmailTaskAlertRecipients, { subject: editor.emailSubject })}</p>
       <ul className="list-unstyled">
-        {editor.emailRecipients.map((group) => (
+        {Array.from(new Set(editor.emailRecipients)).map((group) => (
           <li key={group}>{group}</li>
         ))}
       </ul>
