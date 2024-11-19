@@ -56,7 +56,7 @@ const messages = defineMessages({
   },
   emailHistoryTableColumnHeaderTimeSent: {
     id: 'bulk.email.content.history.table.column.header.timeSent',
-    defaultMessage: 'Time Sent',
+    defaultMessage: 'Time Created',
   },
   emailHistoryTableColumnHeaderNumberSent: {
     id: 'bulk.email.content.history.table.column.header.numberSent',
