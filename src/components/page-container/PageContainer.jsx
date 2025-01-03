@@ -50,7 +50,7 @@ export default function PageContainer(props) {
         originalUserIsStaff,
         courseModes,
         tabs: [...tabs],
-        cohorts: cohorts.map(({ name }) => name),
+        cohorts: cohorts && cohorts?.map(({ name }) => name),
       });
     }
     fetchCourseMetadata();
