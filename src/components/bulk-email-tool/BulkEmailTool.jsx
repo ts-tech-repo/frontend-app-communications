@@ -36,6 +36,7 @@ export default function BulkEmailTool() {
       if (window.location.pathname.includes(item)) {
         logoImage.src =
           "https://static.talentsprint.com/lms_maple/images/iiith_logo.png";
+          localStorage.setItem("isIIITHCourse", "yes");
       }
     });
   }, []);
